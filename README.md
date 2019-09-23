@@ -1,14 +1,23 @@
-A SIMPLE TEMPERATURE CONVERTER INSPIRED BY FREECODECAMP ALGORITHM CHALLENGES
+# SIMPLE TEMPERATURE CONVERTER 
 
 Contains the following features:
 
-1. Ability to convert to Celcius, Kelvin and Fahrenheit
+1. Ability to convert to Celsius, Kelvin and Fahrenheit
 
-Future Functionality
-1. Ability to convert the temperature as you type
-2. Add use for mobile devices
-3. Add more scales
+## Future Updates
 
-UI IMPROVEMENTS
+### Features
+* Add local storage for persistence
+* Add knowledge base with common temperatures such as temperature of the Sun, the boiling point of different materials
+* Make into a PWA
+* Add more scales
 
-1. Fix the overall layout of the app
+### User Experience
+* Add accessibility
+* Possible layout improvement after learning more about UX design
+
+### USer Interface
+* Utilise material design principles
+* Add background color
+
+
