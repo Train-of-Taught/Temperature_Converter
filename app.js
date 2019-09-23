@@ -1,7 +1,7 @@
 //Input Elements
 let tempInputField = document.getElementById("tempInputField");
 let convertScale = document.getElementById("convertScale");
-let autoConvert = document.getElementById("autoConvert");
+let autoConvert = document.getElementById("auto-convert");
 
 //Buttons
 let convertButton = document.getElementById("convert");
