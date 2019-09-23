@@ -46,7 +46,7 @@
       <section class="displayResult">
         <ul class="list-group list-group-flush">
           <li class="list-group-item">
-            <p>Celsius:</p>
+            <p>Celsius: </p>
             <div class="result">
               <span id="celsius">--</span>
               <span>&deg;C</span>
@@ -66,10 +66,38 @@
               <span id="kelvin">--</span>
               <span>&deg;K</span>
             </div>
-
           </li>
         </ul>
       </section>
+
+      <section class="knowledge-base">
+        <div class="input-group mb-3">
+          <select class="custom-select" name="more-temp-info">
+            <option selected>Interesting Temperature Facts...</option>
+            <optgroup label="Melting Points">
+              <option value="silver">Silver</option>
+              <option value="steel">Steel</option>
+              <option value="iron">Iron</option>
+            </optgroup>
+            <optgroup label="Boiling Points">
+              <option value="water">Water</option>
+              <option value="mercury">Mercury</option>
+              <option value="alcohol">Alcohol</option>
+            </optgroup>
+            <optgroup label="Freezing Points">
+              <option value="water">Water</option>
+              <option value="seawater">Sea Water</option>
+              <option value="water">Alcohol</option>
+            </optgroup>
+            <optgroup label="More Temperatures">
+              <option value="sun">Sun</option>
+              <option value="antarctica">Antarctica's Coldest</option>
+              <option value="hottest-day">Highest Record Temperature</option>
+            </optgroup>
+          </select>
+        </div>
+      </section>
+
     </main>
     <footer class="card-footer">
       <input type="checkbox" name="autoConvert" id="auto-convert" unchecked />

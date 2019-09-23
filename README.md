@@ -11,7 +11,7 @@ Contains the following features:
 * Add local storage for persistence
 * Add knowledge base with common temperatures such as temperature of the Sun, the boiling point of different materials
 * Make into a PWA
-* Add more scales
+* Add more scales e.g Reaumur, Rankine
 
 ### User Experience
 * Add accessibility

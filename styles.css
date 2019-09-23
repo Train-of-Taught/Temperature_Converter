@@ -67,7 +67,7 @@ select {
 }
 
 .displayResult p {
-  display: inline;
+  margin-right: 10px;
 }
 
 .displayResult span {
