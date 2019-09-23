@@ -25,7 +25,6 @@
       <form>
         <div class="tempInput">
           <input type="number" id="tempInputField" name="input" required autocomplete="" />
-
           <div class="options">
             <select name="convertScale" id="convertScale">
               <option value="celsius">Celsius</option>
@@ -48,18 +47,26 @@
         <ul class="list-group list-group-flush">
           <li class="list-group-item">
             <p>Celsius:</p>
-            <span id="celsius">--</span>
-            <span>&deg;C</span>
+            <div class="result">
+              <span id="celsius">--</span>
+              <span>&deg;C</span>
+            </div>
           </li>
           <li class="list-group-item">
             <p>Fahrenheit:</p>
-            <span id="fahrenheit">--</span>
-            <span>&deg;F</span>
+            <div class="result">
+              <span id="fahrenheit">--</span>
+              <span>&deg;F</span>
+            </div>
+
           </li>
           <li class="list-group-item">
             <p>Kelvin:</p>
-            <span id="kelvin">--</span>
-            <span>&deg;K</span>
+            <div class="result">
+              <span id="kelvin">--</span>
+              <span>&deg;K</span>
+            </div>
+
           </li>
         </ul>
       </section>

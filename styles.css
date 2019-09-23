@@ -19,20 +19,19 @@ body {
   width: 50%;
 }
 .card-title {
-  font-size: 300%;
+  font-size: 5vw;
   color: blue;
   font-weight: bold;
 }
 
 .card-text {
-  font-size: 1.2em;
+  font-size: 2vw;
   width: 80%;
   margin: 0 auto;
 }
 
 .tempInput {
   display: flex;
-  justify-content: center;
   font-size: 2em;
   width: 100%;
 }
@@ -61,6 +60,10 @@ select {
 
 .displayResult {
   font-size: 2em;
+}
+
+.displayResult li {
+  display: flex;
 }
 
 .displayResult p {

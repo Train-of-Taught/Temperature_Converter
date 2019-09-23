@@ -1,0 +1,16 @@
+@media only screen and (max-width: 839px) {
+    .tempInput {
+        flex-direction: column;
+      }
+      .tempInput input {
+          width: 100%;
+      }
+
+       .options {
+          margin: auto;
+      }
+      .displayResult li {
+          flex-direction: column;
+          text-align: center;
+      }
+}
