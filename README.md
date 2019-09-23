@@ -3,6 +3,7 @@
 Contains the following features:
 
 1. Ability to convert to Celsius, Kelvin and Fahrenheit
+2. Able to auto-convert temperature as it is typed
 
 ## Future Updates
 
