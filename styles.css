@@ -11,29 +11,30 @@ body {
   height: 100vh;
   width: 100%;
   justify-content: center;
-  align-items: center;
 }
 .card {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 40%;
 }
 .card-title {
-  font-size: 5vw;
+  font-size: 3vw;
   color: blue;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .card-text {
-  font-size: 2vw;
+  font-size: 1.2vw;
   width: 80%;
   margin: 0 auto;
+  font-weight: 400;
 }
 
 .tempInput {
   display: flex;
-  font-size: 2em;
+  font-size: 2vw;
   width: 100%;
+  justify-content: center;
 }
 
 input[type="number"] {
@@ -59,7 +60,7 @@ select {
 }
 
 .displayResult {
-  font-size: 2em;
+  font-size: 2vw;
 }
 
 .displayResult li {
@@ -75,6 +76,9 @@ select {
 }
 
 input[type="checkbox"] {
-  transform: scale(2);
   margin-right: 20px;
+}
+
+.card-footer {
+  font-size: 1.5vw;
 }

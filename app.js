@@ -17,6 +17,18 @@ const kelDisplay = document.getElementById("kelvin");
 let currentScale;
 window.onload = () => { currentScale = convertScale.value }
 
+class Model {
+  constructor() { }
+}
+
+class View {
+  constructor() { }
+}
+
+class Controller {
+  constructor() { };
+}
+
 //Handles the calculation logic
 const handleCalculation = (value, scale) => {
 
@@ -47,30 +59,6 @@ const handleCalculation = (value, scale) => {
       fahDisplay.innerHTML = rounded(KelToFah);
       kelDisplay.innerHTML = value;
   }
-}
-
-//Object containing knowledge base values in celsius
-const knowledgeBaseInfo = {
-  melting: {
-    silver: 961,
-    lead: 327.5,
-    tin: 231.9
-  },
-  boiling: {
-    water: 100,
-    acetone: 56,
-    ethanol: 78.37
-  },
-  freezing: {
-    water: 0,
-    acetone: -95,
-    ethanol: -114.1
-  },
-  more: {
-    sun: 5600,
-    antarctica: -100,
-    highestTemp: 56.7
-  },
 }
 
 //Validates if the field is not empty
