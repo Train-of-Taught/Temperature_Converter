@@ -61,15 +61,15 @@ const handleCalculation = (value, scale) => {
   }
 }
 
-//Validates if the field is not empty
+const isValid = (element) => {
+  element.checkValidity() ? element.classList.remove('invalid') : element.classList.add('invalid');
+  return element.checkValidity();
+
+}
+
+//Validates if the field is not empty then runs calculations
 const convert = () => {
-  const valid = tempInputField.checkValidity();
-  if (valid) {
-    handleCalculation(+tempInputField.value, currentScale);
-  } else {
-    reset();
-    return;
-  }
+  isValid(tempInputField) ? handleCalculation(+tempInputField.value, currentScale) : '';
 }
 
 const reset = () => {
@@ -77,6 +77,7 @@ const reset = () => {
   celDisplay.innerHTML = '--';
   fahDisplay.innerHTML = '--';
   kelDisplay.innerHTML = '--';
+  tempInputField.classList.remove('invalid');
 }
 
 const showKnowledgeBaseInfo = (e) => {

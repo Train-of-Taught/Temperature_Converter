@@ -82,3 +82,7 @@ input[type="checkbox"] {
 .card-footer {
   font-size: 1.5vw;
 }
+
+.invalid {
+  border: 1px solid rgb(239,83,80, 0.5);
+}
