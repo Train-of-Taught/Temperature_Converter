@@ -8,7 +8,6 @@
 
 body {
   display: flex;
-  height: 100vh;
   width: 100%;
   justify-content: center;
 }
@@ -16,15 +15,16 @@ body {
   display: flex;
   flex-direction: column;
   width: 40%;
+  height: auto;
 }
 .card-title {
-  font-size: 3vw;
+  font-size: 4vw;
   color: blue;
   font-weight: 600;
 }
 
 .card-text {
-  font-size: 1.2vw;
+  font-size: 1.5vw;
   width: 80%;
   margin: 0 auto;
   font-weight: 400;
@@ -84,5 +84,6 @@ input[type="checkbox"] {
 }
 
 .invalid {
+  box-shadow: 0 0 5px rgb(239,83,80, 0.8) inset;
   border: 1px solid rgb(239,83,80, 0.5);
 }

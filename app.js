@@ -17,17 +17,6 @@ const kelDisplay = document.getElementById("kelvin");
 let currentScale;
 window.onload = () => { currentScale = convertScale.value }
 
-class Model {
-  constructor() { }
-}
-
-class View {
-  constructor() { }
-}
-
-class Controller {
-  constructor() { };
-}
 
 //Handles the calculation logic
 const handleCalculation = (value, scale) => {
@@ -80,16 +69,32 @@ const reset = () => {
   tempInputField.classList.remove('invalid');
 }
 
+const knowledgeBaseInfo = {
+  melting: {
+    "silver": 961,
+    "lead": 327.5,
+    "tin": 231.9
+  },
+  boiling: {
+    "water": 100,
+    "acetone": 56,
+    "ethanol": 78.37
+  },
+  freezing: {
+    "water": 0,
+    "acetone": -95,
+    "ethanol": -114.1
+  },
+  more: {
+    "sun": 5600,
+    "antarctica": -100,
+    "highestTemp": 56.7
+  }
+}
+
 const showKnowledgeBaseInfo = (e) => {
   const categories = e.target.children;
-  const catArr = [];
-  for (category of categories) {
-    catArr.push(category.id)
-  };
-  for (prop in knowledgeBaseInfo) {
-    const match = catArr.find(e => prop == e);
-    console.log(knowledgeBaseInfo[prop]);
-  }
+  console.log(categories);
 
 };
 
@@ -104,7 +109,6 @@ convertScale.addEventListener("change", () => {
   a. The 'change' event for when the numeric sliders are used
   b. keyup for when the keyboard is used
 2. When unchecked, it removes the input ELs or else the automatic conversion will keep happening
-3.  
 */
 autoConvert.addEventListener('change', () => {
   if (autoConvert.checked) {
@@ -124,4 +128,5 @@ convertButton.addEventListener("click", (e) => {
 
 //Resets the app values to their defaults
 resetButton.addEventListener("click", reset);
+
 knowledgeBaseInput.addEventListener('change', showKnowledgeBaseInfo);
