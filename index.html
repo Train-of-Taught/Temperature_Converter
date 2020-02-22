@@ -15,6 +15,7 @@
 </head>
 
 <body>
+
   <div class="card">
     <header class="card-header text-center">
       <h1 class="card-title">TEMPERATURE CONVERTER</h1>
@@ -22,7 +23,11 @@
         Enter a temperature below and choose a scale to convert from.
       </p>
     </header>
+
     <main class="card-body">
+
+      <!-- TEMPERATURE INPUT -->
+
       <form>
         <div class="tempInput">
           <input type="number" id="tempInputField" name="input" required />
@@ -34,7 +39,7 @@
             </select>
           </div>
         </div>
-        <div class="buttons">
+        <div class="button-group">
           <button class="btn btn-success" type="submit" id="convert">
             Convert!
           </button>
@@ -43,6 +48,8 @@
           </button>
         </div>
       </form>
+
+      <!-- RESULT DISPLAY -->
 
       <section class="displayResult">
         <ul class="list-group list-group-flush">
@@ -70,6 +77,8 @@
           </li>
         </ul>
       </section>
+
+      <!-- KNOWLEDGE BASE -->
 
       <section class="knowledge-base">
         <div class="input-group mb-3">
@@ -100,6 +109,8 @@
       </section>
 
     </main>
+
+    <!-- AUTO CONVERT FEATURE -->
     <footer class="card-footer">
       <input type="checkbox" name="autoConvert" id="auto-convert" unchecked />
       <label for="autoConvert">Auto convert as you type</label>
