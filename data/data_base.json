@@ -1,0 +1,30 @@
+[
+  {
+    "meltingPoints": {
+      "silver": 961,
+      "lead": 327.5,
+      "tin": 231.9
+    }
+  },
+  {
+    "boilingPoints": {
+      "water": 100,
+      "acetone": 56,
+      "ethanol": 78.37
+    }
+  },
+  {
+    "freezingPoints": {
+      "water": 0,
+      "acetone": -95,
+      "ethanol": -114.1
+    }
+  },
+  {
+    "moreTemperatures": {
+      "sun": 5600,
+      "antarctica": -100,
+      "highestTemp": 56.7
+    }
+  }
+]
